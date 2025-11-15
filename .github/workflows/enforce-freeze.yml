@@ -27,7 +27,7 @@ jobs:
       - name: Check for Modifications in Frozen Folder
         id: path_check
         run: |
-          FROZEN_PATH="cloud/scripts/"
+          FROZEN_PATH="cloud/"
           MODIFIED="false"
           
           # Check all changed files for matches within the frozen path
