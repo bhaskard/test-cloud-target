@@ -47,6 +47,6 @@ jobs:
         # This step is dependent on the output from the previous step
         if: steps.path_check.outputs.modification_detected == 'true'
         run: |
-          echo "❌ PUSH BLOCKED: Cannot commit changes to the 'cloud/scripts/' folder. This is an automated mirror."
+          echo "❌ PUSH BLOCKED: Cannot commit changes to the 'cloud/' folder. This is an automated mirror."
           # This command is what forces the workflow to fail, thus rejecting the push.
           exit 1
